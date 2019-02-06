@@ -1,0 +1,464 @@
+/*general rules*/
+body {
+    font-family: 'Fahkwang', sans-serif;
+}
+
+h1 {
+    font-size: calc(20px + (45 - 20) * ((100vw - 550px) / (1280 - 550)));
+}
+
+p {
+    font-size: calc(12px + (16 - 12) * ((100vw - 550px) / (1280 - 550)));
+}
+
+h2 {
+    font-size: calc(15px + (40 - 15) * ((100vw - 550px) / (1280 - 550)));
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+header h2 {
+    display: block;
+    padding: 20px;
+    margin: 0%;
+    color: rgb(16, 223, 230);
+
+}
+
+header ul {
+    display: flex;
+    padding-top: 20px;
+    margin: 0;
+    width: 60%;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: calc(8px + (14 - 8) * ((100vw - 400px) / (1280 - 400)));
+}
+
+header ul li {}
+
+header ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: grey;
+    font-weight: bold;
+    transition: all 0.345s ease
+}
+
+header ul li a:hover {
+    color: rgb(16, 223, 230)
+}
+
+.home {
+    padding-bottom: 350px;
+    background-image: url(./media/laptop1.jpg);
+    background-position: left 50% bottom;
+    background-size: cover
+}
+
+.home article h1,
+p,
+button {
+    display: block;
+    width: 50%;
+}
+
+.home article h1 {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-weight: bold
+}
+
+
+.home article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.home article button {
+    text-align: center;
+    width: 160px;
+    background-color: rgb(16, 223, 230);
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 18px;
+    align-self: center;
+    transform: translateX(50%)
+}
+
+.home article p {
+    box-sizing: border-box;
+    padding-right: 20vw
+}
+
+.home article button a {
+    text-transform: uppercase;
+    text-decoration: none
+}
+
+.about {
+    text-align: center
+}
+
+.about h2 {
+    padding-top: 40px
+}
+
+.about p {
+    margin: 0 auto;
+    padding-bottom: 50px
+}
+
+.work {
+    background-image: url(./media/laptop2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.skills {
+    width: 40%;
+    height: 50vh;
+    background-color: white;
+    padding: 100px;
+    padding-left: 200px;
+    padding-right: 20px;
+}
+
+.work footer {
+    display: flex;
+    background-color: rgb(16, 223, 230);
+
+}
+
+.skills {
+    background-color: whitesmoke
+}
+
+.skills p {
+    margin: 0;
+    margin-bottom: 3px
+}
+
+meter {
+    width: calc(50px + (400 - 50) * ((100vw - 550px) / (1280 - 550)));
+    height: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+meter::-webkit-meter-optimum-value {
+    box-shadow: 0 5px 5px -5px #999 inset;
+    background-image: linear-gradient(white rgb(16, 223, 230))
+}
+
+
+meter::-webkit-meter-bar {
+    background: none;
+    background-color: rgb(194, 186, 186);
+    box-shadow: 0 5px 5px -5px #333 inset;
+}
+
+.reference .text p {
+    margin: 0;
+    display: inline;
+}
+
+.reference {
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(255, 255, 255)
+}
+
+.reference .text {
+    vertical-align: middle
+}
+
+.icon,
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%
+}
+
+.icon i {
+    font-size: 60px;
+    color: rgb(255, 255, 255)
+}
+
+.icon a {
+    text-align: center
+}
+
+.work2,
+.wrap {
+    height: 500px;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.picture {
+    width: 25%;
+    display: flex;
+}
+
+.picture:first-of-type {
+    background-image: url(./media/phone1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.picture:nth-of-type(2) {
+    background-image: url(./media/phone2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.picture:nth-last-of-type(3) {
+    background-image: url(./media/phone3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.picture:nth-last-of-type(4) {
+    background-image: url(./media/phone4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.picture:nth-last-of-type(5) {
+    background-image: url(./media/phone5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.picture:nth-last-of-type(6) {
+    background-image: url(./media/phone6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.picture:nth-of-type(7) {
+    background-image: url(https://source.unsplash.com/random?sig=1);
+    background-position: center;
+    background-size: cover;
+}
+
+.picture:nth-of-type(8) {
+    background-image: url(https://source.unsplash.com/random?sig=2);
+    background-position: center;
+    background-size: cover;
+}
+
+.picture .shade {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.250s ease
+}
+
+.picture .shade a i {
+    font-size: 60px;
+    color: rgba(128, 128, 128, 0);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.250s ease;
+}
+
+.picture:hover .shade {
+    background-color: rgba(240, 255, 255, 0.137)
+}
+
+.picture:hover .shade a i {
+    color: rgba(58, 54, 54, 0.507);
+}
+
+
+
+.work2 footer {
+    height: 100px;
+    line-height: 100px;
+    width: 100%;
+    text-align: center;
+
+    background-color: rgba(128, 128, 128, 0.247);
+}
+
+.work2 footer a {
+    width: 100%;
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+}
+
+.workprocess {
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center
+}
+
+.workprocess h2 {
+    padding-top: 30px;
+    padding-bottom: 30px
+}
+
+.workprocess p {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px
+}
+
+.services {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: grey;
+    padding-top: 40px;
+    background-color: lightgrey
+}
+
+.services {
+    padding-top: 60px
+}
+
+.services p {
+    width: 100%
+}
+
+.services ul {
+    display: block;
+    width: 20%;
+    list-style: none;
+    text-align: center
+}
+
+.services ul li a i {
+    font-size: 60px;
+    color: grey
+}
+
+.testimonials {
+    width: 100%;
+    background-color: rgb(16, 223, 230);
+    color: rgb(121, 86, 86);
+    margin: 0
+}
+
+blockquote,
+blockquote p {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+
+
+}
+
+blockquote {
+    box-sizing: border-box;
+    padding: 100px
+}
+
+.testimonials footer img {
+    width: 20%
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around
+}
+
+footer a {
+    color: white
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+footer address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.contacts p {
+    display: block;
+    width: 565px;
+    text-align: center
+}
+
+.name,
+.email,
+select,
+.submit {
+    width: 45%;
+    display: inline-block;
+    padding: 10px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px
+}
+
+.submit {
+    align-self: center
+}
+
+.email {
+    align-self: flex-end
+}
+
+.name {
+    transform: translateY(100%)
+}
+
+input:invalid {
+    background-color: #cc333328
+}
+
+input:valid {
+    background-color: rgba(0, 128, 0, 0.377)
+}
+
+input:invalid {}
+
+input:required {
+    border-left: 2px solid #cc3333
+}
+
+input:nth-of-type(3) {
+    border-radius: 10px;
+    background-color: rgb(16, 223, 230)
+}
